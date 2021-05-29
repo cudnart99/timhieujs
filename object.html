@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Object</title>
+</head>
+<body>
+
+	<h2>JavaScript Objects</h2>
+
+	<p>Object phone :</p>
+	<p id="name"></p>
+	<p id="color"></p>
+	<p id="priceInfo"></p>
+
+
+	<script>
+	var phone = {
+	name : "phone6s" ,
+	color : "white" ,
+	brand : "iphone" ,
+	price : 150 ,
+	priceInfo : function() {
+    return "Price : " + this.price + "$";
+  		}
+	};
+	document.getElementById("name").innerHTML = phone.name;
+	document.getElementById("color").innerHTML = phone.color;
+	document.getElementById("priceInfo").innerHTML = phone.priceInfo();
+
+	
+
+	</script>
+</body>
+</html>

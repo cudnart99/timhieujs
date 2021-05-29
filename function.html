@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Function</title>
+</head>
+<body>
+
+	<h2>JavaScript Functions</h2>
+	<p>Hàm add : <span id="function1"></span> </p>
+	<p>Hàm không có tham số , không trả về : <span id="function2"></span></p>
+	<p>Hàm đệ quy : giai thừa của 5 = <span id="function3"></span></p>
+
+	<p id="function4"></p>
+	<p>Giá trị của d là : <span id="5"></span> </p>
+
+	<script>
+
+	var x = add(3,4); // x = 7
+	document.getElementById("function1").innerHTML = "x = " + x;
+
+	function add(a,b){
+	return a + b ; 
+	}
+
+	//-----------------------------------------------------------------
+	hello();
+	function hello(){
+		document.getElementById("function2").innerHTML = "hello";
+	}
+
+	//-----------------------------------------------------------------
+	document.getElementById("function3").innerHTML = factorial(5);
+	function factorial(a){
+		if (a == 1) return 1;
+   		return a * factorial(a - 1);
+	}
+	// ----------------------------------------------------------------
+	var c = 6;
+	add2();
+	function add2(){
+		var d = 7;
+		document.getElementById("function4").innerHTML = c+d;
+	};
+
+	document.getElementById("5").innerHTML = d;
+
+	</script>
+
+</body>
+</html>

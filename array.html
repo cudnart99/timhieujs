@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array</title>
+</head>
+<body>
+	<h2>JavaScript Arrays</h2>
+	<p id="array"></p>
+	<p id="array[0]"></p>
+	<p>Map :</p>
+	<p id="map"></p>
+	<p>Filter :</p>
+	<p id="filter"></p>
+	<p>Find :</p>
+	<p id="find"></p>
+	<p>ForEach :</p>
+	<p id="forEach"></p>
+
+
+	<script>
+
+		var phone = ["iphone","samsung","nokia"];
+		document.getElementById("array").innerHTML = phone;
+		document.getElementById("array[0]").innerHTML = phone[0];
+
+		// map()----------------------------------------------------------
+		document.getElementById("map").innerHTML = phone.map(upper);
+		function upper(str) {
+			return str.toUpperCase();
+		}
+		// filter() ------------------------------------------------------
+		document.getElementById("filter").innerHTML = phone.filter(check_length);
+		function check_length(str){
+			return str.length >= 6;
+		}
+		// find() --------------------------------------------------------
+		document.getElementById("find").innerHTML = phone.find(check_length);
+		// forEach() --------------------------------------------------------
+		phone.forEach(upper2);
+		function upper2(str) {
+			document.getElementById("forEach").innerHTML += str.toUpperCase() + " ";
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Khai báo biến</title>
+</head>
+
+<body>
+	<h2>JavaScript Variables</h2>
+
+	<p id="a"></p>
+	<p id="name"></p>
+	<p id="x"></p>
+	<p id="y"></p>
+	<p id="z"></p>
+	<p id="t"></p>
+
+
+<script>
+	var a = 5;
+	var name = "Duc";
+	var x = 2 + 3; // x = 5 
+	var y = "Minh" + " " + "Duc"; // x sẽ hiện chuỗi ‘Minh Duc’
+	var z = 2+3+'5'; // x sẽ hiện chuỗi ‘55’
+	var t = '5'+2+3; // x sẽ hiện chuỗi ‘523’
+
+	document.getElementById("a").innerHTML = "a = " + a;
+	document.getElementById("name").innerHTML = "name = " + name;
+	document.getElementById("x").innerHTML = "x = " + x;
+	document.getElementById("y").innerHTML = "y = " + y;
+	document.getElementById("z").innerHTML = "z = " + z;
+	document.getElementById("t").innerHTML = "t = " + t;
+</script>
+
+</body>
+</html>
